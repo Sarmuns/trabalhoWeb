@@ -23,6 +23,7 @@
 
 .card {
     width: 12vw;
+    cursor: pointer;
 }
 
 .card-text {
@@ -41,9 +42,11 @@
 
 .foo{
     background-color: black;
-    height: 2vh;
+    height: fit-content;
 }
 
-.ico:hover{
-    transform: scale(1.5);
+.ico{
+    min-height: 10px;
+    cursor: pointer;
 }
+
