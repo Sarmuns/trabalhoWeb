@@ -5,12 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="homeStyle.css">
+    <link rel="stylesheet" href="HStyle.css">
     <title>Spotify</title>
 </head>
 
@@ -19,233 +16,126 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
 
-    <header class="sticky-top">
-        <nav class="navbar navbar-expand-lg bg-success">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="./img/logo.png" alt="Logo" width="30" height="24"
-                        class="d-inline-block align-text-top img-fluid">
-                    Spotify
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse d-flex align-items-end flex-column" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="FAQ.html">FAQ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="cadastro.html">Cadastro</a>
-                        </li>
-                    </ul>
+        <header class="sticky-top">
+            <nav class="navbar navbar-expand-lg bg-success">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="./img/logo.png" alt="Logo" width="30" height="24"
+                            class="d-inline-block align-text-top img-fluid">
+                        Spotify
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse d-flex align-items-end flex-column" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="home.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="FAQ.html">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="cadastro.html">Cadastro</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </header>
+            </nav>
+        </header>
 
-    <div class="d-flex flex-column">
-
-        <!-- Search Bar -->
-        <div class="w-75 py-5 input-group d-flex align-self-center">
-            <input type="text" class="form-control bg-dark-subtle" placeholder="Busque uma música"
-                aria-label="Busque uma música" aria-describedby="basic-addon2">
-            <div class="input-group-append mx-3">
-                <button type="button" class="btn btn-success btn-lg">Buscar</button>
-            </div>
+    <div id="showcase">
+        <div class="showcase-container">
+            <h2>Música para todos.</h2>
+            <p>Milhões de musicas a sua escolha. E nem precisa de cartão de crédito.</p>
+            <button class="btn-primary">Obtenha o spotify free.</button>
         </div>
-
-        <!-- Suas Músicas -->
-        <div class="d-flex flex-column p-2">
-            <p class="d-flex align-self-start display-5 text-white">
-                Suas Músicas
-            </p>
-            <div class="control d-flex justify-content-evenly">
-                <div class="card bg-success mb-3">
-                    <img src="./img/audioslave.webp" class="card-img-top" alt="...">
-                    <div class="">
-                        <p class="card-text text-center">Audioslave - Show Me How To Live</p>
-                    </div>
-                </div>
-                <div class="card bg-success mb-3">
-                    <img src="./img/joji.png" class="card-img-top" alt="...">
-                    <div class="">
-                        <p class="card-text text-center">Joji - Glimpse Of Us</p>
-                    </div>
-                </div>
-                <div class="card bg-success mb-3">
-                    <img src=" ./img/linkinpark.jpg" class="card-img-top" alt="...">
-                    <div class="">
-                        <p class="card-text text-center align-self-center">Linkin Park - Lying From You</p>
-                    </div>
-                </div>
-                <div class="card bg-success mb-3">
-                    <img src=" ./img/jorgebenjor.webp" class="card-img-top" alt="...">
-                    <div class="">
-                        <p class="card-text text-center">Jorge Ben Jor - O Telefone Tocou Novamente</p>
-                    </div>
-                </div>
-                <div class="card bg-success mb-3">
-                    <img src=" ./img/redhot.webp" class="card-img-top" alt="...">
-                    <div class="">
-                        <p class="card-text text-center">Red Hot Chilli Peppers - Dani California</p>
-                    </div>
-                </div>
-                <div class="card bg-success mb-3">
-                    <img src=" ./img/limp.jpg" class="card-img-top" alt="...">
-                    <div class="">
-                        <p class="card-text text-center">Limp Bizkit - My Way</p>
-                    </div>
-                </div>
-                <div class="card bg-success mb-3">
-                    <img src=" ./img/thedoors.jpg" class="card-img-top" alt="...">
-                    <div class="">
-                        <p class="card-text text-center">The Doors - Riders on the Storm</p>
-                    </div>
-                </div>
-                <div class="card bg-success mb-3">
-                    <img src=" ./img/jimcroce.jfif" class="card-img-top" alt="...">
-                    <div class="">
-                        <p class="card-text text-center">Jim Croce - Time In A Bottle</p>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-
-        <!-- Suas Playlists -->
-        <div class="d-flex flex-column p-2">
-            <p class="d-flex align-self-start display-5 text-white">
-                Suas Playlists
-            </p>
-            <div class="control d-flex justify-content-evenly">
-                <div class="card bg-success mb-3">
-                    <img src="./img/playlist/lp.jpg" class="card-img-top" alt="...">
-                    <div class="">
-                        <p class="card-text text-center">This Is Linkin Park</p>
-                    </div>
-                </div>
-                <div class="card bg-success mb-3">
-                    <img src="./img/playlist/games.jfif" class="card-img-top" alt="...">
-                    <div class="">
-                        <p class="card-text text-center">Top Gaming Tracks</p>
-                    </div>
-                </div>
-                <div class="card bg-success mb-3">
-                    <img src="./img/playlist/am.jpg" class="card-img-top" alt="...">
-                    <div class="">
-                        <p class="card-text text-center align-self-center">This Is Arctic Monkeys</p>
-                    </div>
-                </div>
-                <div class="card bg-success mb-3">
-                    <img src="./img/playlist/gym.jfif" class="card-img-top" alt="...">
-                    <div class="">
-                        <p class="card-text text-center">Beast Mode</p>
-                    </div>
-                </div>
-                <div class="card bg-success mb-3">
-                    <img src="./img/playlist/punk.jfif" class="card-img-top" alt="...">
-                    <div class="">
-                        <p class="card-text text-center">Punk Essentials</p>
-                    </div>
-                </div>
-                <div class="card bg-success mb-3">
-                    <img src="./img/playlist/rock.jfif" class="card-img-top" alt="...">
-                    <div class="">
-                        <p class="card-text text-center">Best Of Rock 2001</p>
-                    </div>
-                </div>
-                <div class="card bg-success mb-3">
-                    <img src="./img/playlist/sleep.jfif" class="card-img-top" alt="...">
-                    <div class="">
-                        <p class="card-text text-center">Sleep</p>
-                    </div>
-                </div>
-                <div class="card bg-success mb-3">
-                    <img src="./img/playlist/top50.jpg" class="card-img-top" alt="...">
-                    <div class="">
-                        <p class="card-text text-center">Top 50 - Global</p>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-
-        <!-- Seus Artistas -->
-        <div class="d-flex flex-column p-2">
-            <p class="d-flex align-self-start display-5 text-white">
-                Seus Artistas
-            </p>
-            <div class="control d-flex justify-content-evenly">
-                <div class="card bg-transparent border-0 mb-3">
-                    <img src="./img/artistas/am.jfif" class="card-img-round" alt="...">
-                    <div class="">
-                        <p class="card-text text-center text-white-50 fw-bold">Arctic Monkeys</p>
-                    </div>
-                </div>
-                <div class="card bg-transparent border-0 mb-3">
-                    <img src="./img/artistas/joji.jfif" class="card-img-round" alt="...">
-                    <div class="">
-                        <p class="card-text text-center text-white-50 fw-bold">Joji</p>
-                    </div>
-                </div>
-                <div class="card bg-transparent border-0 mb-3">
-                    <img src="./img/artistas/ozzy.jfif" class="card-img-round" alt="...">
-                    <div class="">
-                        <p class="card-text text-center text-white-50 fw-bold">Ozzy Osbourne</p>
-                    </div>
-                </div>
-                <div class="card bg-transparent border-0 mb-3">
-                    <img src="./img/artistas/lp.jfif" class="card-img-round" alt="...">
-                    <div class="">
-                        <p class="card-text text-center text-white-50 fw-bold">Linkin Park</p>
-                    </div>
-                </div>
-                <div class="card bg-transparent border-0 mb-3">
-                    <img src="./img/artistas/post.jfif" class="card-img-round" alt="...">
-                    <div class="">
-                        <p class="card-text text-center text-white-50 fw-bold">Post Malone</p>
-                    </div>
-                </div>
-                <div class="card bg-transparent border-0 mb-3">
-                    <img src="./img/artistas/redhot.jfif" class="card-img-round" alt="...">
-                    <div class="">
-                        <p class="card-text text-center text-white-50 fw-bold">Red Hot Chilli Peppers</p>
-                    </div>
-                </div>
-                <div class="card bg-transparent border-0 mb-3">
-                    <img src="./img/artistas/siames.jfif" class="card-img-round" alt="...">
-                    <div class="">
-                        <p class="card-text text-center text-white-50 fw-bold">Siamés</p>
-                    </div>
-                </div>
-                <div class="card bg-transparent border-0 mb-3">
-                    <img src="./img/artistas/soad.jfif" class="card-img-round" alt="...">
-                    <div class="">
-                        <p class="card-text text-center text-white-50 fw-bold">System Of A Down</p>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-
-        <!-- Fake Soundbar -->
-        <footer class="foo text-white-50 d-flex justify-content-center align-items-center sticky-bottom">
-            <i for="demo" class="ico mx-4 fa-solid fa-backward-fast"></i>
-            <i for="demo" class="ico mx-1 fa-solid fa-play fa-2x"></i>
-            <i for="demo" class="ico mx-1 fa-solid fa-pause fa-2x"></i>
-            <i for="demo" class="ico mx-4 fa-solid fa-forward-fast fa-1x"></i>
-        </footer>
-
-
     </div>
+    <div footer id="footer">
+        <div class="footer-content">
+            <img src="img/logo1.png" alt="" class="logo">
+
+            <ul class="footer-menu">
+                <p>Empresa</p>
+                <li class="footer-menu-item">
+                    Sobre
+                </li>
+                <li class="footer-menu-item">
+                    Empregos
+                </li>
+                <li class="footer-menu-item">
+                    For the Record
+                </li>
+            </ul>
+
+            <ul class="footer-menu">
+                <p>Comunidades</p>
+                <li class="footer-menu-item">
+                    Para Artistas
+                </li>
+                <li class="footer-menu-item">
+                    Desenvolvedores
+                </li>
+                <li class="footer-menu-item">
+                    For the Record
+                </li>
+                <li class="footer-menu-item">
+                    Investidores
+                </li>
+                <li class="footer-menu-item">
+                    Fornecedores
+                </li>
+            </ul>
+
+            <ul class="footer-menu">
+                <p>Links úteis</p>
+                <li class="footer-menu-item">
+                    Suporte
+                </li>
+                <li class="footer-menu-item">
+                    Player da Web
+                </li>
+                <li class="footer-menu-item">
+                    Aplicativo móvel grátis
+                </li>
+            </ul>
+
+            <div class="socials">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+            </div>
+        </div>
+
+        <div class="footer-info">
+            <ul class="footer-info-items">
+                <li class="footer-info-item">
+                    Legal
+                </li>
+                <li class="footer-info-item">
+                    Centro de Privacidade
+                </li>
+                <li class="footer-info-item">
+                    Política de privacidade
+                </li>
+                <li class="footer-info-item">
+                    Cookies
+                </li>
+                <li class="footer-info-item">
+                    Sobre anúncios
+                </li>
+            </ul>
+
+            <div class="rights">
+                <div class="country">
+                    <p>Brasil</p>
+                    <img src="img/brazil.png" alt="" class="brazil-flag">
+                </div>
+                <p>&copy; 2023 Spotify AB</p>
+            </div>
+
+        </div>
 
 </body>
 
